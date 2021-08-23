@@ -3,7 +3,7 @@ package UkeOppgaver1;
 public class UkeOppgaver1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Hello World - AlgDat");
 
         int a[] = {8,4,17,10,6,20,1,11,15,3,18,9,2,7,19};
         int min_index = min(a);
