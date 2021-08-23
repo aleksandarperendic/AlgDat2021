@@ -5,7 +5,7 @@ public class UkeOppgaver1 {
     public static void main(String[] args) {
         System.out.println("Hello World - AlgDat");
 
-        int a[] = {8,4,17,10,6,20,1,11,15,3,18,9,2,7,19};
+        int a[] = {8,4,17,10,6,20,1,11,15,3,18,9,2,7,19,1};
         int min_index = min(a);
 
         System.out.println("Tallet finnes på plass: "+min_index);
@@ -22,7 +22,7 @@ public class UkeOppgaver1 {
            int value = a[i];
            int index = i;
            //Sjekker om det finnes mindre tall enn tall som er på a[0]
-           if(value < min_value) {
+           if(value <= min_value) { //Sjekker om den er mindre eller lik
                min_value = value;
                min_index = index;
            }
