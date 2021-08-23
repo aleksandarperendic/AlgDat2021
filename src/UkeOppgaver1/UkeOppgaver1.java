@@ -13,20 +13,21 @@ public class UkeOppgaver1 {
     }
 
     static int min(int[] a){
-
+            //Initierer min_value og min_index til å bli det første tallet i arrayet mitt
         int min_value = a[0];
         int min_index = 0;
 
-        for (int i=1;i < a.length; i++){
+            //For-løkke
+        for (int i=1; i < a.length; i++){
            int value = a[i];
            int index = i;
-
-           //Sjekker
+           //Sjekker om det finnes mindre tall enn tall som er på a[0]
            if(value < min_value) {
                min_value = value;
                min_index = index;
            }
         }
+
         //Returerer index
         return min_index;
     }
