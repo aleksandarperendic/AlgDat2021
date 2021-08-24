@@ -10,6 +10,17 @@ public class MyFirstSort {
 
         int max_index= findMax(values);
         System.out.println("Største verdi ligger på plass: " + max_index+" og har verdi: "+values[max_index]);
+
+        // 2) Bytte plass på tall på plass 0 og max_index
+        int temp = values[0];
+        values[0] = values[max_index];
+        values[max_index] = temp;
+
+        System.out.println("");
+        System.out.println("Arrayet etter onbytting:");
+        for (int i=0; i< values.length; ++i){
+            System.out.print(values[i]+" ");
+        }
     }
 
     /**
