@@ -1,6 +1,6 @@
 package UkeOppgaver1;
 
-public class UkeOppgaver1 {
+public class Oppgave112 {
 
     /** OPPGAVER 1.1.2
      * 1) Metodekallet vil returnere posisjonen 6 og det er tallet: 1
