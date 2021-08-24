@@ -7,34 +7,37 @@ public class MyFirstSort {
 
         int values[] = {1, 7, 2, 4, 6, 9};
 
+        for (int k = 0; k < values.length - 1; ++k) {
+            int max_index = findMax(values, k, values.length);
+            System.out.println("Største verdi ligger på plass: " + max_index + " og har verdi: " + values[max_index]);
 
-        int max_index= findMax(values);
-        System.out.println("Største verdi ligger på plass: " + max_index+" og har verdi: "+values[max_index]);
+            // 2) Bytte plass på tall på plass 0 og max_index
+            int temp = values[k];
+            values[k] = values[max_index];
+            values[max_index] = temp;
 
-        // 2) Bytte plass på tall på plass 0 og max_index
-        int temp = values[0];
-        values[0] = values[max_index];
-        values[max_index] = temp;
-
-        System.out.println("");
-        System.out.println("Arrayet etter onbytting:");
-        for (int i=0; i< values.length; ++i){
-            System.out.print(values[i]+" ");
+            System.out.println("");
+            System.out.println("Arrayet etter onbytting:");
+            for (int i = 0; i < values.length; ++i) {
+                System.out.print(values[i] + " ");
+            }
+            System.out.println(" ");
         }
     }
 
     /**
-     * Findmax - finner index til største tall i et array
+     * Findmax - finner index til største tall i et array,
+     * men søker bare innenfor tallene i (fra,til)
      */
 
-    public static int findMax(int[] values){
+    public static int findMax(int[] values, int fra, int til){
         // Initialiser ved å se på første "kort"
         // Dette er det største tallet jeg har funnet så langt
-        int index = 0;
-        int max_value = values[0];
+        int index = fra;
+        int max_value = values[fra];
 
         // Sjekk at grensene for løkken er riktig.
-        for(int i=1; i<values.length; ++i){
+        for(int i=fra+1; i<til; ++i){
             // Sjekk om vi har funnet nytt største tall
             if (values[i] > max_value){
                 max_value = values[i];
