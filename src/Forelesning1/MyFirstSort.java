@@ -141,10 +141,10 @@ public class MyFirstSort {
             // Sjekk om vi har funnet nytt største tall
             if (values[i] > max_value){
                 max_value = values[i];
-                index = i;
+                // index = i;
             }
         }
         // Returnerer index
-        return index;
+        return index_max;
     }
 }
