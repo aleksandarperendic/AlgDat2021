@@ -7,22 +7,8 @@ public class MyFirstSort {
 
         int values[] = {1, 7, 2, 4, 6, 9};
 
-        for (int k = 0; k < values.length - 1; ++k) {
-            int max_index = findMax(values, k, values.length);
-            System.out.println("Største verdi ligger på plass: " + max_index + " og har verdi: " + values[max_index]);
+        myFirstSort(values);
 
-            // 2) Bytte plass på tall på plass 0 og max_index
-            int temp = values[k];
-            values[k] = values[max_index];
-            values[max_index] = temp;
-
-            System.out.println("");
-            System.out.println("Arrayet etter onbytting:");
-            for (int i = 0; i < values.length; ++i) {
-                System.out.print(values[i] + " ");
-            }
-            System.out.println(" ");
-        }
     }
 
     /**
@@ -46,5 +32,30 @@ public class MyFirstSort {
         }
         // Returnerer index
         return index;
+    }
+
+    /**
+     * Denne funksjon tar inn ett array med verdiere (heltall),
+     * og sorterer dem "in place"
+     * @param values Verdier vi skal sortere.
+     */
+
+    public static void myFirstSort(int[] values){
+        for (int k = 0; k < values.length - 1; ++k) {
+            int max_index = findMax(values, k, values.length);
+         //   System.out.println("Største verdi ligger på plass: " + max_index + " og har verdi: " + values[max_index]);
+
+            // 2) Bytte plass på tall på plass 0 og max_index
+            int temp = values[k];
+            values[k] = values[max_index];
+            values[max_index] = temp;
+
+        /*    System.out.println("");
+            System.out.println("Arrayet etter onbytting:");
+            for (int i = 0; i < values.length; ++i) {
+                System.out.print(values[i] + " ");
+            }
+            System.out.println(" "); */
+        }
     }
 }
