@@ -46,13 +46,15 @@ public class Tabell {
 
         // OPPGAVE 1.2.3 - 3
         fratilKontroll(a.length,fra,til);
+
         if (fra == til)
             throw new NoSuchElementException
                     ("fra(" + fra + ") = til(" + til + ") - tomt tabellintervall!");
 
         // OPPGAVE 1.2.3 - 4
-        if (a == null) throw new NullPointerException
-                ("parametertabellen a er null!");
+        if (a == null)
+            throw new NullPointerException
+                ("Finnes ikke noe i arrayet ditt.");
 
         int m = fra;             // indeks til største verdi i a[fra:til>
         int maksverdi = a[fra];  // største verdi i a[fra:til>
