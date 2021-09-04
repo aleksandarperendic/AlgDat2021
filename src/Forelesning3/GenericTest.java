@@ -9,8 +9,8 @@ public class GenericTest {
         Character[] b = {'A','C','K','Z','L','Y','M'};
         String[] c = {"ASF","Kari","poteter","lammelår","eple","Petter"};
         Person[] d = {new Person("Petter","Pettersen"), new Person("Kari","Pettersen"),new Person("Nils","Abrahamsen"),new Person("Tor","Toresen")};
-        //maks_generic(b);
-        System.out.println(maks_generic(d));
+        int e = maks_generic(d);
+        System.out.println(d[e]);
     }
 
     public static class Person implements Comparable<Person> {
@@ -29,6 +29,10 @@ public class GenericTest {
             } else {
                 return last_compare;
             }
+        }
+
+        public String toString() {
+            return first_name + " " + last_name;
         }
     }
 
