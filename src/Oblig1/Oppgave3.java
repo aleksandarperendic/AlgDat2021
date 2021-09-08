@@ -2,14 +2,14 @@ package Oblig1;
 
 public class Oppgave3 {
     public static void main(String[] args) {
-        int[] a = {1,3,5, 1, 7, 6, 8,8,1};
+        int[] a = {1};
         int b = antallUlikeUsortert(a);
         System.out.println(b);
     }
 
     public static int antallUlikeUsortert(int[] a) {
         int teller = 0;
-        if (a.length > 1) {
+        if (a.length >= 1) {
             teller = 1;
             for (int i = 1; i < a.length; i++) {
                 int j;
