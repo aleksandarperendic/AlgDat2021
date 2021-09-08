@@ -3,7 +3,7 @@ package Oblig1;
 public class Oppgave2 {
 
     public static void main(String[] args) {
-        int[] a = {2,2,3,4,4,5,6,6,7};
+        int[] a = {2,3,4};
         int b = antallUlikeSortert(a);
         System.out.println(b);
     }
@@ -19,7 +19,7 @@ public class Oppgave2 {
 
         // Sjekker om lengde på arrayet er 0
         int teller = 0;
-        if (a.length != 0) {
+        if (a.length > 1) {
             teller = 1;
             // For-løkke som teller antall forskjellige tall i det sorterte arrayet
             for (int i = 0; i < a.length - 1; i++) {
