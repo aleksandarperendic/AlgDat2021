@@ -17,7 +17,6 @@ public class Oppgave4 {
             for (int j = a.length - 1; j > i; --j) {
                 // Sjekk om tall på posisjon j og (j-1) er sortert riktig
                 if (a[j] < a[j - 1]) {
-                    //   if (a[j] % 2 == 0) {
                     int temp = a[j];
                     a[j] = a[j - 1];
                     a[j - 1] = temp;
@@ -38,7 +37,6 @@ public class Oppgave4 {
                         a[z - 1] = temp;
                     }
                 }
-
             }
         }
         System.out.println(Arrays.toString(a));
