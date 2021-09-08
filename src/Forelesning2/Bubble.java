@@ -13,17 +13,18 @@ public class Bubble {
 
     static void bubble(int[] a){
 
-        for (int i=0; i<a.length-1;++i){
-            if(a[i] > a[i+1]){
+        for (int i=0; i<a.length-1;++i) {
+            if (a[i] > a[i + 1]) {
                 int temp = a[i];
-                a[i] = a[i+1];
-                a[i+1] = temp;
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
             }
             System.out.print(a[0]);
+        }
             for (int j=1;j<a.length;++j){
                 System.out.print(", "+a[j]);
             }
             System.out.println();
         }
     }
-}
+

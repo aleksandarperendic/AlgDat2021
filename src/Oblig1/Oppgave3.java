@@ -2,7 +2,7 @@ package Oblig1;
 
 public class Oppgave3 {
     public static void main(String[] args) {
-        int[] a = {1,3,2,2,2,2,2,2};
+        int[] a = {1,3,5, 1, 7, 6, 8,8,1};
         int b = antallUlikeUsortert(a);
         System.out.println(b);
     }

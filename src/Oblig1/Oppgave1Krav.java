@@ -3,7 +3,7 @@ package Oblig1;
 public class Oppgave1Krav {
 
     public static void main(String[] args) {
-        int[] a = {144, 1212, 6, 8, 2, 999, 11, 14, 9};
+        int[] a = {1,2,3,4,5,6,7,8,9};
         int b = ombyttinger(a);
         System.out.println(b);
     }
