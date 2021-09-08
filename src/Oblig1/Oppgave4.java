@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Oppgave4 {
 
     public static void main(String[] args) {
-        int[] a = {4, 78, -3, 7, -2, 8, 5};
+        int[] a = {7,2,9,4,5,-3,-11,8,12};
         delSortering(a);
     }
 
@@ -32,11 +32,6 @@ public class Oppgave4 {
                     a[z] = a[z - 1];
                     a[z - 1] = temp;
                     if(temp > a[z] && a[z] % 2 == 1){
-                        temp = a[z];
-                        a[z] = a[z - 1];
-                        a[z - 1] = temp;
-                    }
-                    if(temp < a[z] && a[z] % 2 == 1){
                         temp = a[z];
                         a[z] = a[z - 1];
                         a[z - 1] = temp;
