@@ -36,13 +36,20 @@ public class Oppgave7 {
     }
 
     public static String fletting(String... s) {
+        // Initierer string som returnerer og lengde av alle tall (startet på 0)
         String ut = "";
         int lengde = 0;
+        // For-løkke som teller alle bokstaver og legger dem til lengde variabel
         for (int k=0; k < s.length; k++){
             lengde += s[k].length();
         }
+
+        // For-løkke (i) som gå gjennom alle bokstavene,
+        // samt for-løkke (j) som går gjennom alle ord.
         for (int i=0; i < lengde; i++){
             for (int j=0; j < s.length; j++){
+                // Sjekker om lengde av alle bokstaver er
+                // mindre enn lengde til de enkelte "ordene"
                 if (i < s[j].length()){
                     char utskrift = s[j].charAt(i);
                     ut += utskrift;
