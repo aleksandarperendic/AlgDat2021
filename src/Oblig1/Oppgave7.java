@@ -48,14 +48,14 @@ public class Oppgave7 {
         // samt for-løkke (j) som går gjennom alle ord.
         for (int i=0; i < lengde; i++){
             for (int j=0; j < s.length; j++){
-                // Sjekker om lengde av alle bokstaver er
-                // mindre enn lengde til de enkelte "ordene"
-                if (i < s[j].length()){
+                // Forhindrer IndexFeil
+               if (i < s[j].length()){
                     char utskrift = s[j].charAt(i);
                     ut += utskrift;
                 }
             }
         }
+        // Returnerer verdi
         return ut;
     }
 
