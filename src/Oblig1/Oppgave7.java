@@ -7,10 +7,10 @@ public class Oppgave7 {
 
     public static void main(String[] args) {
         // ABCD - EFGH (A E B F C G D H }
-        String jedan = "FGIBZ AAAA";
-        String dva = "ANUPI BBBB";
-      //  String print = flett(jedan, dva);
-        String print = flett("AAAA","BBBB");
+        String jedan = "OLGRPE3";
+        String dva = "BIGUP3";
+        String print = flett(jedan, dva);
+       // String print = flett("AAAA","BBBB");
         System.out.println(print);
         int proba = jedan.length()+dva.length();
         System.out.println(proba);
