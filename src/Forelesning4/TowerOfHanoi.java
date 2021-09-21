@@ -2,7 +2,7 @@ package Forelesning4;
 
 public class TowerOfHanoi {
     public static void main(String[] args) {
-        towerOfHanoi(2);
+        towerOfHanoi(3);
     }
 
     // En funksjon som kjører "tower of Hanoi" ved hjelp av rekursive kall
