@@ -19,7 +19,7 @@ public class BinarySearchTree {
     /**
      * Node-klasse som har alt vi trenger i binæresøketreet.
      */
-   public static class Node {
+   static class Node {
         Node parent;
         Node left_child;
         Node right_child;
