@@ -2,7 +2,7 @@ package Forelesning8;
 
 public class HuffmanCoding {
 
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         char[] symbols = {'E','T','I','A','N'};
         double[] frequencies = {0.4, 0.3, 0.1, 0.167, 0.033};
 
@@ -51,7 +51,7 @@ public class HuffmanCoding {
         void print() {
             System.out.println(this.symbol + ": " + this.frequency);
         }
-    }
+    } */
 
 
 
